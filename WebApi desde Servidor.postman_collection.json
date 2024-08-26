@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "80038ecd-5524-4e8c-a98f-df4a372292dd",
+		"name": "WebApi desde Servidor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18224998"
+	},
+	"item": [
+		{
+			"name": "Registrarse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"admin\",\r\n  \"email\": \"bilikifood@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.proyectomaui.somee.com/api/Acceso/Registrarse",
+					"protocol": "http",
+					"host": [
+						"www",
+						"proyectomaui",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Acceso",
+						"Registrarse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Incorrecto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"bilikifood@gmail.com\",\r\n  \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.proyectomaui.somee.com/api/Acceso/Login",
+					"protocol": "http",
+					"host": [
+						"www",
+						"proyectomaui",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Acceso",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Correcto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"bilikifood@gmail.com\",\r\n  \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.proyectomaui.somee.com/api/Acceso/Login",
+					"protocol": "http",
+					"host": [
+						"www",
+						"proyectomaui",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Acceso",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Servicio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJiaWxpa2lmb29kQGdtYWlsLmNvbSIsImV4cCI6MTcyNDUxNjk1Nn0.kGnGf8ekp5vMGEjdMoVRRLNFm0stvj-1hWe-6Pl55OI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.proyectomaui.somee.com/api/Servicio/Lista",
+					"protocol": "http",
+					"host": [
+						"www",
+						"proyectomaui",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Servicio",
+						"Lista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Taller",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJiaWxpa2lmb29kQGdtYWlsLmNvbSIsImV4cCI6MTcyNDcwOTg1NX0.drEWXnLEGZpLpWwjP2S-TcKyBetfAbynX9rOIFLK7WU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.proyectomaui.somee.com/api/Taller/Lista",
+					"protocol": "http",
+					"host": [
+						"www",
+						"proyectomaui",
+						"somee",
+						"com"
+					],
+					"path": [
+						"api",
+						"Taller",
+						"Lista"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

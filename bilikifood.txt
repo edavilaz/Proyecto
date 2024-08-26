@@ -1,0 +1,15 @@
+somee.com
+
+edavilaz
+Jedz636711
+
+
+Connection string (Copiar en appsettings.json de la carpeta publicada de la api)
+
+workstation id=bilikifood.mssql.somee.com;packet size=4096;user id=edavilaz_SQLLogin_1;pwd=fbp1xgx8vw;data source=bilikifood.mssql.somee.com;persist security info=False;initial catalog=bilikifood;TrustServerCertificate=True
+
+
+url api publicada
+
+http://www.proyectomaui.somee.com/swagger/index.html
+
