@@ -62,7 +62,6 @@ Para verificar que funciona la API, se tiene los siguientes pasos:
 
 ![Login Incorrecto](README/login%20incorrecto.png)
 
-![2](README/2.png)
 
 3. Login Correcto
 
